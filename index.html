@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fireflies Lyrics</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="fade-in">Fireflies by Owl City</h1>
+        <audio id="song" controls class="fade-in">
+            <source src="Owl City - Fireflies.mp3" type="audio/mpeg">t.
+        </audio>
+       <button id="toggle-button" class="fade-in">Show Lyrics</button>
+        <div id="lyrics" class="fade-in" style="display: none;">
+            <p id="line1">You would not believe your eyes</p>
+            <p id="line2">If ten million fireflies</p>
+            <p id="line3">Lit up the world as I fell asleep</p>
+            <p id="line4">Cuz they fill the open air</p>
+            <p id="line5">And leave teardrops everywhere</p>
+            <p id="line6">You think me rude, but I would just stand and stare</p>
+            <p id="line7">I'd like to make myself believe</p>
+            <p id="line8">That planet earth turns slowly</p>
+            <p id="line9">It's hard to say that I'd rather stay awake when I'm asleep</p>
+            <p id="line10">Cuz everything is never as it seems</p>
+            <p id="line11">Cuz I get a thousand hugs</p>
+            <p id="line12">From ten thousand lightning bugs</p>
+            <p id="line13">As they try to teach me how to dance</p>
+            <p id="line14">A foxtrot above my head</p>
+            <p id="line15">A sockhop beneath my bed</p>
+            <p id="line16">The disco ball is just hanging by a thread (thread, thread)</p>
+            <p id="line17">I'd like to make myself believe</p>
+            <p id="line18">That planet earth turns slowly</p>
+            <p id="line19">It's hard to say that I'd rather stay awake when I'm asleep</p>
+            <p id="line20">Cuz everything is never as it seems (when I fall asleep)</p>
+            <p id="line21">Leave my door open just a crack</p>
+            <p id="line22">(Please take me away from here)</p>
+            <p id="line23">Cuz I feel like such an insomniac</p>
+            <p id="line24">(Please take me away from here)</p>
+            <p id="line25">Why do I tire of counting sheep?</p>
+            <p id="line26">(Please take me away from here)</p>
+            <p id="line27">When I'm far to tired to fall asleep</p>
+            <p id="line28">To ten million fireflies</p>
+            <p id="line29">I'm weird cuz I hate goodbyes</p>
+            <p id="line30">I got misty eyes as they said farewell (said farewell)</p>
+            <p id="line31">But I know where several are</p>
+            <p id="line32">If my dreams get real bizarre</p>
+            <p id="line33">Cuz I saved a few and I keep 'em in a jar</p>
+            <p id="line34">I'd like to make myself believe</p>
+            <p id="line35">That planet earth turns slowly</p>
+            <p id="line36">It's hard to say that I'd rather stay awake when I'm asleep</p>
+            <p id="line37">Cuz everything is never as it seems (when I fall asleep)</p>
+            <p id="line38">I'd like to make myself believe</p>
+            <p id="line39">That planet earth turns slowly</p>
+            <p id="line40">It's hard to say that I'd rather stay awake when I'm asleep</p>
+            <p id="line41">Cuz everything is never as it seems (when I fall asleep)</p>
+            <p id="line42">I'd like to make myself believe</p>
+            <p id="line43">That planet earth turns slowly</p>
+            <p id="line44">It's hard to say that I'd rather stay awake when I'm asleep</p>
+            <p id="line45">Because my dreams are bursting at the seams</p>
+        </div>
+    </div>
+    <script src="script.js">
+        document.getElementById('toggle-button').addEventListener('click', function() {
+    const lyrics = document.getElementById('lyrics');
+    if (lyrics.style.display === 'none' || lyrics.style.display === '') {
+        lyrics.style.display = 'block';
+        this.innerText = 'Hide Lyrics';
+    } else {
+        lyrics.style.display = 'none';
+        this.innerText = 'Show Lyrics';
+    }
+});
+
+    </script>
+</body>
+</html>
